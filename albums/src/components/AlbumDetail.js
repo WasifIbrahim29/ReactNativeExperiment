@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { View, Text } from 'react-native';
+import Card from './Card';
 
-class AlbumList extends Component {
-    render() {
-        return (
-            <View>
-                <Text>AlbumList</Text>
-            </View>
-        );
-    }
+const AlbumDetail = (props) => (
 
-}
+    <Card>           
+        <Text>{props.item.title}</Text>
+    </Card>
+);
 
-export default AlbumList;
+export default AlbumDetail;
